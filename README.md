@@ -17,5 +17,5 @@ node liri.js my-tweets
 
 ![alt text](do-what-it-says.gif)
 ![alt text](movie-this.gif)
-![alt text](spotify-this-song.gif)
+![alt text](spotify-this.gif)
 ![alt text](my-tweets.gif)
