@@ -20,24 +20,30 @@ var client = new Twitter(keys.twitter);
 
 // We will then create a switch-case statement (if-then would also work).
 // The switch-case will direct which function gets run.
-switch (action) {
-    case "my-tweets":
-        my_tweets();
-        break;
 
-    case "movie-this":
-        movie_this(value);
-        break;
-
-    case "do-what-it-says":
-        do_what_it_says();
-        break;
-
-    case "spotify-this-song":
-        spotify_this_song(value);
-        break;
+var run = function (action, value) {
+    oper(action, value);
 }
 
+var oper = function (action, value) {
+    switch (action) {
+        case "my-tweets":
+            my_tweets();
+            break;
+
+        case "movie-this":
+            movie_this(value);
+            break;
+
+        case "do-what-it-says":
+            do_what_it_says();
+            break;
+
+        case "spotify-this-song":
+            spotify_this_song(value);
+            break;
+    }
+}
 
 function my_tweets() {
     var params = { screen_name: 'fenixrising13' };
@@ -54,7 +60,7 @@ function spotify_this_song(value) {
 
     spotify
 
-        .search({ type: 'track', query: 'All the Small Things' })
+        .search({ type: 'track', query: value })
         .then(function (response) {
 
             var results = response.tracks.items;
@@ -117,14 +123,12 @@ function do_what_it_says() {
 
         data = data.split(",");
 
-        for (var i = 0; i < data.length; i++) {
-            if (data[i]) {
-                process.argv[2] == data[0];
-                process.argv[3] == data[1];
+        // for (var i = 0; i < data.length; i++) {
+        // if (data[i]) {
+        run(data[0], data[1]);
+        // }
 
-            }
-
-        }
+        // }
         console.log('Action: ' + data[0]);
         console.log('Value: ' + data[1]);
     })
@@ -132,3 +136,4 @@ function do_what_it_says() {
 
 
 }
+run(action, value);
