@@ -55,7 +55,7 @@ function my_tweets() {
         }
     });
 }
-
+// Spotify this song function
 function spotify_this_song(value) {
 
     spotify
@@ -81,7 +81,7 @@ function spotify_this_song(value) {
             console.log(err);
         });
 }
-
+// Movie this function
 function movie_this(value) {
     // Request omdbapi
     Request("http://www.omdbapi.com/?t=" + value + "&y=&plot=short&apikey=trilogy", function (error, response, body) {
