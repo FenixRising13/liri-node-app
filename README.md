@@ -4,8 +4,8 @@
 Liri is a smart app that takes in command line requests and initiates API calls using NPM packages. 
 
 ### Running included actions with a desired value will return a result.
-* node liri.js movie-this <movie-name> - Choose a movie
-* node liri.js spotify-this-song <song-name> - Choose a song
+* node liri.js movie-this "Movie Name" - Choose a movie
+* node liri.js spotify-this-song "Song Name" - Choose a song
 * node liri.js do-what-it-says - Try and find out
 * node liri.js my-tweets - Triggers the Twitter Search API
 
