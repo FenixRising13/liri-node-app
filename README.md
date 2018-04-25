@@ -34,5 +34,5 @@ Mark Powalisz
 
 ![alt text](videos/do-what-it-says.gif)
 ![alt text](videos/movie-this.gif)
-![alt text](videos/spotify-this.gif)
+![alt text](videos/spotify-this-song.gif)
 ![alt text](videos/my-tweets.gif)
