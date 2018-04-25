@@ -32,7 +32,7 @@ Visual Studio Code
 ## Author
 Mark Powalisz
 
-![alt text](do-what-it-says.gif)
-![alt text](movie-this.gif)
-![alt text](spotify-this.gif)
-![alt text](my-tweets.gif)
+![alt text](videos/do-what-it-says.gif)
+![alt text](videos/movie-this.gif)
+![alt text](videos/spotify-this.gif)
+![alt text](videos/my-tweets.gif)
